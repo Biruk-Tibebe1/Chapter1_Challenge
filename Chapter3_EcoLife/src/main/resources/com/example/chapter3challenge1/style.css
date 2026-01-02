@@ -1,0 +1,61 @@
+.root {
+    -fx-background-color: #4cff73; /* AliceBlue - Light background */
+    -fx-font-family: 'Open Sans', sans-serif;
+}
+
+.city-heading {
+    -fx-font-family: 'Merriweather', serif;
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2E8B57; /* Forest Green */
+    -fx-padding: 10;
+}
+
+.temp-text {
+    -fx-font-size: 48px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #000000;
+}
+
+.condition-text {
+    -fx-font-size: 18px;
+    -fx-text-fill: #555555;
+}
+
+.eco-tip-text {
+    -fx-font-size: 14px;
+    -fx-font-style: italic;
+    -fx-text-fill: #8B4513; /* Earthy Brown */
+    -fx-wrap-text: true;
+    -fx-text-alignment: center;
+}
+
+.forecast-box {
+    -fx-background-color: #E0F2F1;
+    -fx-padding: 10;
+    -fx-spacing: 10;
+    -fx-alignment: center;
+}
+
+.forecast-item {
+    -fx-background-color: white;
+    -fx-background-radius: 10;
+    -fx-padding: 10;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 5, 0, 0, 2);
+}
+
+.button {
+    -fx-background-color: #a9bdb2;
+    -fx-text-fill: white;
+    -fx-background-radius: 5;
+}
+
+.button:disabled {
+    -fx-background-color: #cccccc;
+}
+
+.text-field {
+    -fx-background-radius: 5;
+    -fx-border-color: #96ffc2;
+    -fx-border-radius: 5;
+}

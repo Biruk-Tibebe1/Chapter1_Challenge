@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.SVGPath?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.chapter3challenge1.HelloController"
+            stylesheets="@style.css">
+
+    <top>
+        <VBox alignment="CENTER" spacing="10">
+            <padding>
+                <Insets top="20" right="20" bottom="10" left="20"/>
+            </padding>
+            <Label fx:id="cityLabel" text="City Name" styleClass="city-heading"/>
+            <HBox alignment="CENTER" spacing="10">
+                <TextField fx:id="cityTextField" promptText="Enter city name"/>
+                <Button fx:id="refreshButton" text="Refresh" onAction="#onRefreshButtonClick"/>
+            </HBox>
+        </VBox>
+    </top>
+
+    <center>
+        <VBox alignment="CENTER" spacing="15">
+            <padding>
+                <Insets top="10" right="20" bottom="20" left="20"/>
+            </padding>
+            <Label fx:id="tempLabel" text="25°C" styleClass="temp-text"/>
+            <Label fx:id="conditionLabel" text="Sunny" styleClass="condition-text"/>
+
+            <!-- Leaf Shape -->
+            <SVGPath fx:id="ecoIcon" content="M17.657 5.304c-3.124-3.073-8.192-3.073-11.313 0a7.78 7.78 0 0 0 0 11.13L12 22l5.656-5.565a7.78 7.78 0 0 0 0-11.131zM12 19.172l-4.242-4.172a5.78 5.78 0 0 1 0-8.263c2.343-2.305 6.142-2.305 8.485 0a5.78 5.78 0 0 1 0 8.263L12 19.172z"
+                     fill="#2E8B57" scaleX="2" scaleY="2"/>
+
+            <Label fx:id="gardeningTipLabel" text="Great day for watering plants!" styleClass="eco-tip-text"/>
+            <Label fx:id="airQualityLabel" text="AQI: 45 (Good)" styleClass="eco-tip-text"/>
+        </VBox>
+    </center>
+
+    <bottom>
+        <HBox fx:id="forecastBox" styleClass="forecast-box" alignment="CENTER">
+            <!-- Forecast items will be added dynamically or statically here -->
+            <VBox styleClass="forecast-item" alignment="CENTER">
+                <Label text="Tomorrow"/>
+                <Label text="24°C"/>
+            </VBox>
+            <VBox styleClass="forecast-item" alignment="CENTER">
+                <Label text="Wed"/>
+                <Label text="22°C"/>
+            </VBox>
+            <VBox styleClass="forecast-item" alignment="CENTER">
+                <Label text="Thu"/>
+                <Label text="26°C"/>
+            </VBox>
+        </HBox>
+    </bottom>
+
+</BorderPane>
